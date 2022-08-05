@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <title>Document</title>
-
-
-</head>
+<?php require 'partials/head.php'; ?>
 
   <?php foreach($tasks as $task) :?>
 
@@ -22,7 +13,4 @@
 
   <?php endforeach; ?>
 
-
-</body>
-
-</html>
+  <?php require 'partials/footer.php'; ?>

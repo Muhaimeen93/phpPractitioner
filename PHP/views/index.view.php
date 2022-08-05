@@ -1,5 +1,21 @@
 <?php require 'partials/head.php'; ?>
 
+
+
+<h1> Submit Your Application </h1>
+
+<form method="POST" action="/names"> 
+  <input name="name"> </input>
+
+
+  <button type="submit">Submit </button>
+
+
+</form>
+
+
+<?php
+/*
   <?php foreach($tasks as $task) :?>
 
       <li>
@@ -11,6 +27,6 @@
         <?php endif; ?>
     </li>
 
-  <?php endforeach; ?>
+  <?php endforeach; ?>*/?>
 
   <?php require 'partials/footer.php'; ?>

@@ -1,17 +1,7 @@
 <?php require 'partials/head.php'; ?>
 
+<h1> All Users </h1>
 
-
-<h1> Submit Your Application </h1>
-
-<form method="POST" action="/names"> 
-  <input name="name"> </input>
-
-
-  <button type="submit">Submit </button>
-
-
-</form>
 
 <?php foreach($users as $user) :?>
 <li>
@@ -22,7 +12,16 @@
 
 <?php endforeach; ?>
 
+<h1> Submit Your Application </h1>
 
+<form method="POST" action="/users"> 
+  <input name="name"> </input>
+
+
+  <button type="submit">Submit </button>
+
+
+</form>
 <?php
 /*
   <?php foreach($tasks as $task) :?>
@@ -38,4 +37,5 @@
 
   <?php endforeach; ?>*/?>
 
-  <?php require 'partials/footer.php'; ?>
+
+<?php require 'partials/footer.php'; ?>

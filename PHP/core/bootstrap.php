@@ -1,13 +1,10 @@
 <?php
 
 
-require 'core/Router.php';
-require 'core/database/Connection.php';   //connect the database
-require 'core/database/QueryBuilder.php'; //intitate querys
-require 'core/Request.php';
+$app = [];
 
-$config = require 'config.php';  //database configs
+$app['config'] = require 'config.php';
 
-$pdo = Connection::make($config['database']);  //gets the database as an object
-
-return new QueryBuilder($pdo);
+$app['database']= new QueryBuilder (
+    Connection::make($app['config']['database'])
+);
